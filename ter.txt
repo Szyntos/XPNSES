@@ -1,0 +1,79 @@
+Shop Collection:
+{
+  "_id": ObjectId,
+  "id": string,
+  "name": string,
+  "physical_address": string,
+  "web_address": string
+  "franchise_id"
+}
+
+Franchise Collection:
+{
+ ...
+}
+
+Product Collection:
+{
+  "_id": ObjectId,
+  "id": string,
+  "name": string,
+  "brand_name": string,
+  "price": decimal,
+  "unit": string,
+  "optional_description": string,
+  "currency": string,
+}
+
+tags {
+    id
+    name
+}
+
+product_tags {
+    id
+    product id
+    name id
+}
+
+Price_history{
+    product
+    price
+    unit
+    currency
+    timestamp
+}
+
+Receipt Collection:
+{
+  "_id": ObjectId,
+  "id": string,
+  "shop_id": ObjectId,
+  "timestamp": ISODate
+  "is_invoice": bool
+}
+
+Payment Collection{
+    id
+    Receipt
+    Product
+    amount
+}
+
+Person {
+    ID
+    First Name
+    Second Name
+    Address
+
+}
+
+Transaction {
+    sender
+    reciever
+    amount
+    currency
+    receipt
+    description
+}
+

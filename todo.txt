@@ -1,0 +1,12 @@
+Shop: uniq_id - id - name - physical_address - web_address
+
+Product: uniq_id - id - name - brand_name - price - (per item, per kg) - optional_description - currency
+
+
+Receipt: uniq_id - id - product_id - qnt - shop_id
+
+
+
+Transaction: uniq_id - id - amount - recipient - sender
+
+Payment: uniq_id - id - transaction_id - receipt_id - date
